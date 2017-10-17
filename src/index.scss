@@ -2,6 +2,7 @@ $fontColor : black;
 $greenColor : green; 
 $fontStyle : Arial, Helvetica, sans-serif;
 $fontSize : 32px;
+$whiteColor: white;
 
 html, body {
 	width: 100%;
@@ -10,33 +11,58 @@ html, body {
 }
 
 body {
-    background-color: white;
+    background-color: $whiteColor;
 }
 
 #header_text {
 	text-align: center;
 }
 
-div{
-	font-family: $fontStyle;
-	color: $fontColor;	
-	h1{
-		font-size: $fontSize;
-	}
-	h2{
-		font-size: $fontSize * 2/3;
+.test01{
+	div{
+		font-family: $fontStyle;
+		color: $fontColor;	
+		h1{
+			font-size: $fontSize;
+		}
+		h2{
+			font-size: $fontSize * 2/3;
+		}
+
+		h3{
+			font-size: $fontSize/2;
+		}
+
+		button{
+			background-color: $whiteColor;
+			border : 1px solid $greenColor;
+			color: $greenColor;
+			padding : 5px;
+			margin :10px;
+			width : 100%;
+			border-radius: 6px;
+		}
+
+
 	}
 
-	h3{
-		font-size: $fontSize/2;
+	.return{
+			margin-top: 20px;
+			text-align: center;
+			color: $greenColor;
+			cursor:pointer;	
 	}
 
-	button{
-		background-color: white;
-		border : 1px solid $greenColor;
-		margin : 5px;
-		padding : 5px;
-		width : 100%;
-		border-radius: 6px;
+
+
+	#single_button{
+		display:block;
+		margin : 0 auto;
+		width: auto;
 	}
 }
+
+nav.test01{
+	text-align: right;
+}
+

@@ -1,13 +1,23 @@
-<div class="container">
+<nav class="test01"> <button class="btn btn-link navbutton" ng-click="laguageChange('en')">{{'Button1 '| translate}}</button> <button class="btn btn-link navbutton" ng-click="laguageChange('fr')" >{{'Button2 '| translate}}</button> </nav>
+<div class="container test01">
     <div class="row" id="header_text">
-        <nav> english </nav>
-        <h1>Book an Appointment</h1>
-        <h3>Our Investing Topic</h3>
-        <h2>Pick a topic, then we'll find a time and place</h2>
+        <h1>{{'Header1 '| translate}}</h1>
+        
+        <h3>{{'Header2 '| translate}}</h3>
+        <h2>{{'Header3 '| translate}}</h2>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-repeat="Obutton in Obuttons" set-equal-height>
-            <button>{{Obutton.text}}</button>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"  ng-repeat="Obutton in Obuttons" >
+            <button set-equal-height>{{Obutton.text}}</button>
         </div>
+    </div>
+    <div class="return">
+       <span ng-click="previousPage()"> <i class="fa fa-angle-left"></i> {{'BackButton '| translate}} </span>
+    </div>
+    
+    <hr />
+    <div class="row center_button">
+
+        <button id="single_button">Switch to TD</button>
     </div>
 </div>

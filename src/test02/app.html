@@ -1,11 +1,11 @@
-<div class="test02">
+<div class="test02 row">
 	<div class="ngdialog ngdialog-theme-default col-xs-12 col-sm-8 col-md-6 col-lg-6">
 
-		<div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+		<div role="alert" uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
 
 	    <form class="future-banking">
 			
-			<section class="container-fluid header">
+			<section class="container-fluid header" aria-label="form-header">
 		    	<div class="row">
 		    		<div class="col-xs-12 col-sm-12 col-md-6">
 		        		<i class="fa fa-credit-card fa-2x"></i>

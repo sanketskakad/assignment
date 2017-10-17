@@ -1,14 +1,14 @@
-<div class="test02 row">
+<div class="test02">
 	<div class="ngdialog ngdialog-theme-default col-xs-12 col-sm-8 col-md-6 col-lg-6">
 
 		<div role="alert" uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
 
 	    <form class="future-banking">
 			
-			<section class="container-fluid header" aria-label="form-header">
+			<section class="container-fluid header" aria-label="Money Transfer Form ">
 		    	<div class="row">
 		    		<div class="col-xs-12 col-sm-12 col-md-6">
-		        		<i class="fa fa-credit-card fa-2x"></i>
+		        		<i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
 		        		<h1 class="title">Send Transfer</h1>
 		        	</div>
 		        	<div class="col-xs-12 col-sm-12 col-md-6">
@@ -19,7 +19,7 @@
 			        		</button>
 			        		<button class="btn btn-default">
 			        			Sign out
-								<i class="fa fa-sign-out fa-lg"></i>
+								<i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
 			        		</button>
 		        		</div>
 		        	</div>
@@ -31,7 +31,7 @@
 		        </div>
 	        </section>
 
-	        <section class="container-fluid" id="account-info">
+	        <section class="container-fluid" id="account-info" aria-label="Sender Account details">
 				<div class="col-xs-12">
 			        <div class="row">
 			        	<div class="col-xs-12">
@@ -58,7 +58,7 @@
 		        </div>
 	        </section>
 
-	        <section class="container-fluid" id="transfer-details">
+	        <section class="container-fluid" id="transfer-details" aria-label="Amount Details Section">
 				<div class="col-xs-12">
 			        <div class="row">
 			        	<div class="col-xs-12">
@@ -94,7 +94,7 @@
 		        </div>
 	        </section>
 
-	        <section class="container-fluid" id="send-to-recipient">
+	        <section class="container-fluid" id="send-to-recipient" aria-label="Receiver Account details">
 				<div class="col-xs-12">
 			        <div class="row">
 			        	<div class="col-xs-12">

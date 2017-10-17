@@ -5,7 +5,7 @@ export const test01 = {
            $scope.Obuttons = response;
        });
 
-       $scope.laguageChange = function (lang){
+       $scope.languageChange = function (lang){
            $translate.use(lang);
        };   
 
